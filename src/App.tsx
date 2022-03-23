@@ -1,5 +1,5 @@
 import './App.css';
-import "@fontsource/roboto";
+import 'fontsource-roboto';
 
 function App() {
   return (
