@@ -40,4 +40,10 @@ src
 │    
 ├── globals (This will have all the globals such as helpers, constants, etc.)
 ├── utils (This will have all the utils such as Home, About, etc.)
+├── config (This will have all the config such as routes, etc.)
+├── assets (This will have all the assets such as images, fonts, etc.)
+├── redux (This will have all the redux related code such as reducers, actions, etc.)
+├── styles (This will have all the styles such as global, components, etc.)
+├── services (This will have all the services such as api, etc.)
+├── __tests__ (This will have all the tests such as unit, integration, etc.)
 ```
