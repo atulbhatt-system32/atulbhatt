@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import { Button, Typography } from "@mui/material";
 import { LanguageSelection } from "../Components/LanguageSelection";
-// import { DASHBOARD, ROOT } from "navigation/CONSTANTS";
-// import {useHistory} from 'react-router-dom'
+import { ROOT } from "navigation/CONSTANTS";
+import { useNavigate } from "react-router-dom";
 
 const HomeView = (props: any) => {
-  // const history = useHistory();
+  const navigate = useNavigate();
   const goTo = (path: String) => {
-    // history.push(path || ROOT);
+    navigate(`${path || ROOT}`);
   };
   return (
     <div>
