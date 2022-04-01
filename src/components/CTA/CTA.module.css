@@ -1,0 +1,16 @@
+.cta__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fea905;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #e1e1e1;
+}
+
+.cta__container__circle {
+  border-radius: 50%;
+}
+.cta__container__rounded {
+  border-radius: 20%;
+}
