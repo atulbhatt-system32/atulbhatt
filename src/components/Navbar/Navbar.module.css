@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap");
+
+.storybook__navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Raleway", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue",
+    "Fira Sans", sans-serif;
+  align-items: center;
+  padding: 0px 6rem;
+  height: 60px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.storybook__navbar__list {
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0;
+}
+
+.storybook__navbar__list__item {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.storybook__navbar__list__item + .storybook__navbar__list__item {
+  margin-left: 2rem;
+}
+.storybook__navbar__list__item a {
+  text-decoration: none;
+  color: #000;
+}

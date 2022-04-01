@@ -1,9 +1,12 @@
 ## Personal Tech Portfolio
+
 This is a personal tech portfolio project. This is also the place where I'll be applying my learning and practicing. This portoflio will be the single source for all fo my works.
 
 ## Directory Rules
+
 All the code related to UI will be inside `src` folder.
 src folder will have the following structure:
+
 ```
 src
 ├── components
@@ -37,7 +40,7 @@ src
 │          │      ├── AboutSection1.module.scss
 │          ├── About.jsx
 │          ├── About.scss
-│    
+│
 ├── globals (This will have all the globals such as helpers, constants, etc.)
 ├── utils (This will have all the utils such as Home, About, etc.)
 ├── config (This will have all the config such as routes, etc.)
