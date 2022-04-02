@@ -1,4 +1,4 @@
-import "./button.css";
+import styles from "./Button.module.css";
 
 interface ButtonProps {
   /**
@@ -41,16 +41,16 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const classes = [];
-  primary && classes.push("storybook-button--primary");
-  variant === "contained" && classes.push("storybook-button--contained");
-  variant === "outlined" && classes.push("storybook-button--outlined");
-  variant === "text" && classes.push("storybook-button--text");
+  primary && classes.push(styles.storybook_button__primary);
+  variant === "contained" && classes.push(styles.storybook_button__contained);
+  variant === "outlined" && classes.push(styles.storybook_button__outlined);
+  variant === "text" && classes.push(styles.storybook_button__text);
   return (
     <button
       type="button"
       className={[
-        "storybook-button",
-        `storybook-button--${size}`,
+        styles.storybook_button,
+        `${styles[`storybook_button__${size}`]}`,
         ...classes,
       ].join(" ")}
       style={{ backgroundColor }}

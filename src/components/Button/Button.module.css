@@ -1,4 +1,6 @@
-.storybook-button {
+@import "../../App.css";
+
+.storybook_button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border-radius: 6px;
@@ -7,22 +9,21 @@
   line-height: 1;
   outline: 0;
 }
-.storybook-button--primary,
-.storybook-button--contained {
-  color: white;
-  background-color: #fea905;
+.storybook_button__primary,
+.storybook_button__contained {
+  color: var(--primary-color);
+  background-color: var(--primary-translucent-color);
   border: none;
 }
-.storybook-button--secondary {
-  color: #333;
+.storybook_button__secondary {
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 
-.storybook-button--text {
+.storybook_button__text {
   outline: none;
   background-color: transparent;
-  color: #fea905;
+  color: var(--primary-color);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
@@ -30,28 +31,27 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.storybook-button--text:hover {
+.storybook_button__text:hover {
   text-decoration: none;
-  background-color: rgb(254, 169, 5, 0.04);
+  background-color: var(--primary-translucent-color);
 }
 
-.storybook-button--outlined {
-  color: #fea905;
-  border-color: rgb(254, 169, 5);
+.storybook_button__outlined {
+  color: var(--primary-color);
   outline: 0;
   user-select: none;
-  border: 1px solid rgb(254, 169, 5, 0.5);
+  border: 1px solid var(--primary-translucent-color);
   background-color: transparent;
 }
-.storybook-button--small {
+.storybook_button__small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.storybook-button--medium {
+.storybook_button__medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.storybook-button--large {
+.storybook_button__large {
   font-size: 16px;
   padding: 12px 24px;
 }
