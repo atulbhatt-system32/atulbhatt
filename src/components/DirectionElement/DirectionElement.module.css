@@ -1,0 +1,40 @@
+@import "../../App.css";
+
+.direction_container {
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 300px;
+  border: 1px solid var(--primary-color);
+  background-color: antiquewhite;
+  animation-name: scale-up-center;
+  animation-duration: 0.5s;
+}
+
+.triangle {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 20px solid var(--primary-color);
+  animation-name: scale-up-center;
+  animation-duration: 0.5s;
+}
+
+.triangle_light {
+  border-top-color: var(--primary-translucent-color);
+}
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
