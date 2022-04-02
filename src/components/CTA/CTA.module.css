@@ -1,11 +1,13 @@
+@import url("../../App.css");
+
 .cta__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fea905;
+  color: var(--primary-color);
   height: 4rem;
   width: 4rem;
-  border: 1px solid #e1e1e1;
+  border: 2px solid var(--primary-translucent-color);
 }
 
 .cta__container__circle {
@@ -13,4 +15,9 @@
 }
 .cta__container__rounded {
   border-radius: 20%;
+}
+
+.filled {
+  background-color: var(--primary-translucent-color);
+  border: 0;
 }

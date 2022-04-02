@@ -12,6 +12,7 @@ const Template: ComponentStory<typeof CTA> = (args) => <CTA {...args} />;
 export const circularVariant = Template.bind({});
 export const squareVariant = Template.bind({});
 export const roundedVariant = Template.bind({});
+export const filledVariant = Template.bind({});
 
 circularVariant.args = {
   icon: InstagramLogo(),
@@ -25,4 +26,10 @@ squareVariant.args = {
 roundedVariant.args = {
   icon: InstagramLogo(),
   variant: "rounded",
+};
+
+filledVariant.args = {
+  icon: InstagramLogo(),
+  variant: "circular",
+  filled: true,
 };
