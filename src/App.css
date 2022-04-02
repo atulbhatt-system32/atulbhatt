@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #c7f36c;
+  --primary-translucent-color: rgba(199, 243, 108, 0.22);
+  --primary-linear-gradient: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    rgba(11, 11, 11, 0) 100%
+  );
+}
+
 * {
   margin: 0;
   padding: 0;
