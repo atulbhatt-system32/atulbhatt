@@ -13,6 +13,5 @@ const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: "Navbar",
   logoTitle: "Atul Bhatt",
 };

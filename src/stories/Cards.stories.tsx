@@ -1,5 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Cards } from "../components/index";
+import styles from "../components/Cards/Cards.module.css";
 
 export default {
   title: "Portfolio/Cards",
@@ -10,6 +11,7 @@ const template: ComponentStory<typeof Cards> = (args) => <Cards {...args} />;
 
 export const basicCard = template.bind({});
 export const curvedCard = template.bind({});
+export const ProjectCard = template.bind({});
 basicCard.args = {
   title: "Basic Card",
 };
@@ -17,4 +19,22 @@ basicCard.args = {
 curvedCard.args = {
   title: "Basic Card",
   variant: "curved",
+};
+
+ProjectCard.args = {
+  title: "Project Card",
+  variant: "curved",
+  purpose: "project",
+  children: (
+    <div className={styles.children_wrapper}>
+      <div className={styles.projectcard_title}>Project Card</div>
+
+      <div className={styles.projectcard_body}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+      </div>
+    </div>
+  ),
 };
