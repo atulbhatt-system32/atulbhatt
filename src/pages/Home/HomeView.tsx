@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { ROOT } from "navigation/CONSTANTS";
 import { useNavigate } from "react-router-dom";
 import styles from "./HomeView.module.css";
-import { DirectionElement, CTA, Button, Cards } from "components";
+import { DirectionElement, CTA, Button, Cards, PictureCard } from "components";
 import { InstagramLogo } from "assets/svgs";
 
 const IntroSection = () => {
@@ -33,6 +33,7 @@ const IntroSection = () => {
           <Button label="Contact" variant="outlined" />
         </div>
       </div>
+      <PictureCard />
     </div>
   );
 };

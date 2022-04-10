@@ -4,12 +4,11 @@
   display: flex;
   width: 10%;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .line {
-  height: 450px;
+  height: 480px;
   border: 0.8px solid var(--text);
   background-color: antiquewhite;
   animation-name: scale-up-center;

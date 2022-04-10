@@ -1,0 +1,10 @@
+.card_container {
+  background-image: url("./svgs/PaddleBg.svg");
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  background-size: 100%;
+}
+
+.card_container img {
+  height: 75%;
+}
