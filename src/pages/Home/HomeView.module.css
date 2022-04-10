@@ -1,0 +1,106 @@
+.homeview_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  color: var(--text);
+}
+
+.aboutme_section {
+  display: flex;
+}
+.intro_section_title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 3rem 0 1rem 0;
+  width: 50%;
+}
+
+.my_name {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.whoami_detailed {
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 2rem 0;
+  line-height: 1.5rem;
+}
+.professional_role {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social_cta_row {
+  display: flex;
+}
+
+.social_cta_row div + div {
+  margin-left: 1rem;
+}
+
+.cta_button_row button {
+  font-weight: 100;
+}
+
+.cta_button_row button + button {
+  margin-left: 1rem;
+}
+
+.skills_section,
+.projects_section {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #0b0b0b;
+  padding: 4rem 4rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+.projects_section {
+  background: var(--background);
+}
+.skills_section_title,
+.projects_section_title {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.skills_section_subtitle,
+.projects_section_subtitle {
+  font-weight: 200;
+  margin: 1.5rem 0;
+}
+.children_wrapper {
+  padding: 1.5rem;
+  color: #fff;
+}
+.projectcard_title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}
+
+.projectcard_body {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.projects_card_row,
+.skills_card_row {
+  display: flex;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.skills_card_row {
+  margin: 5rem 0;
+}
+
+.projects_card_row div + div {
+  margin-left: 1rem;
+}

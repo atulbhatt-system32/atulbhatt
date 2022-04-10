@@ -12,6 +12,12 @@ interface CardProps {
 export function Cards({ children, variant, purpose }: CardProps) {
   const classes = [styles.card_container];
   variant === "curved" && classes.push(styles.curved);
-  purpose === "project" && classes.push(styles.project_card);
+  purpose === "project" &&
+    classes.push(
+      styles.project_card,
+      styles.children_wrapper,
+      styles.projectcard_title,
+      styles.projectcard_body
+    );
   return <div className={classes.join(" ")}>{children}</div>;
 }

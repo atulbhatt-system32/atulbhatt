@@ -25,16 +25,5 @@ ProjectCard.args = {
   title: "Project Card",
   variant: "curved",
   purpose: "project",
-  children: (
-    <div className={styles.children_wrapper}>
-      <div className={styles.projectcard_title}>Project Card</div>
-
-      <div className={styles.projectcard_body}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-      </div>
-    </div>
-  ),
+  children: <div className={styles.children_wrapper}></div>,
 };

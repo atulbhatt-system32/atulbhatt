@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.2rem;
   border: 2px solid var(--primary-translucent-color);
 }
 
