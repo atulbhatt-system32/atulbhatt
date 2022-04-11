@@ -19,5 +19,8 @@ export function Cards({ children, variant, purpose }: CardProps) {
       styles.projectcard_title,
       styles.projectcard_body
     );
+
+  purpose === "skills" &&
+    classes.push(styles.skills_card, styles.children_wrapper);
   return <div className={classes.join(" ")}>{children}</div>;
 }

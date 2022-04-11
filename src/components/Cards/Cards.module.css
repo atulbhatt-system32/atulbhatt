@@ -29,3 +29,20 @@
   border: 0;
   border-radius: 12px;
 }
+
+.skills_card {
+  background: linear-gradient(
+      225.3deg,
+      rgba(199, 243, 108, 0.06) 5.55%,
+      rgba(16, 16, 16, 0.06) 90.64%
+    ),
+    #101010;
+
+  min-width: 35%;
+  width: 100%;
+  border: 0;
+}
+
+.skills_card + .skills_card {
+  margin-left: 1rem;
+}

@@ -39,6 +39,12 @@ const IntroSection = () => {
 };
 
 const SkillsSection = () => {
+  const skills = [
+    { title: "HTML" },
+    { title: "CSS" },
+    { title: "JS" },
+    { title: "React" },
+  ];
   return (
     <section className={styles.skills_section}>
       <div className={styles.skills_section_title}>
@@ -48,13 +54,47 @@ const SkillsSection = () => {
         <span>Technologies I'm familiar with.</span>
       </div>
       <div className={styles.skills_card_row}>
-        <Cards>React</Cards>
+        {skills.map((skill) => (
+          <Cards purpose="skills">
+            <div className={styles.skill_name}>{skill.title}</div>
+          </Cards>
+        ))}
       </div>
     </section>
   );
 };
 
 const ProjectsSection = () => {
+  const projects = [
+    {
+      title: "RecruitBae",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "SourceBae",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "Side",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "Compex Analytics",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "Automyze",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "Bandhify",
+      description: "A recruitment platform for developers",
+    },
+    {
+      title: "Samadhan",
+      description: "A recruitment platform for developers",
+    },
+  ];
   return (
     <div className={styles.projects_section}>
       <div className={styles.projects_section_title}>
@@ -64,39 +104,16 @@ const ProjectsSection = () => {
         <span>Projects I've done till date.</span>
       </div>
       <div className={styles.projects_card_row}>
-        <Cards purpose="project">
-          <div className={styles.children_wrapper}>
-            <div className={styles.projectcard_title}>Project Card</div>
-            <div className={styles.projectcard_body}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit.
+        {projects.map((project) => (
+          <Cards purpose="project">
+            <div className={styles.children_wrapper}>
+              <div className={styles.projectcard_title}>{project.title}</div>
+              <span className={styles.projectcard_body}>
+                {project.description}
+              </span>
             </div>
-          </div>
-        </Cards>
-        <Cards purpose="project">
-          <div className={styles.children_wrapper}>
-            <div className={styles.projectcard_title}>Project Card</div>
-            <div className={styles.projectcard_body}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit.
-            </div>
-          </div>
-        </Cards>
-        <Cards purpose="project">
-          <div className={styles.children_wrapper}>
-            <div className={styles.projectcard_title}>Project Card</div>
-            <div className={styles.projectcard_body}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit.
-            </div>
-          </div>
-        </Cards>
+          </Cards>
+        ))}
       </div>
     </div>
   );
