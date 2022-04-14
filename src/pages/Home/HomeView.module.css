@@ -100,10 +100,14 @@
   margin-top: 5rem;
   padding: 2rem 0;
   overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
 }
 
 .skills_card_row {
   margin: 5rem 0;
+
+  overflow-x: auto;
 }
 
 .projects_card_row div ~ div {
@@ -128,4 +132,22 @@
 .projects_card_row::-webkit-scrollbar-thumb {
   background-color: var(--accent);
   outline: 1px solid var(--accent);
+}
+
+.skills_card_row::-webkit-scrollbar,
+.projects_card_row::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+  min-width: 300px;
+  min-height: 20vh;
+  margin: 15px;
+
+  font-size: 5em;
+  text-align: center;
+  line-height: 300px;
+  background-color: #fff9ef;
+  border-radius: 7px;
 }

@@ -30,19 +30,65 @@
   border-radius: 12px;
 }
 
+.skills_card + .skills_card {
+  margin-left: 1rem;
+}
+
 .skills_card {
+  position: relative;
+  background: linear-gradient(
+      311.64deg,
+      rgba(199, 243, 108, 0.6) 2.6%,
+      rgba(16, 16, 16, 0.6) 87.72%
+    ),
+    #101010;
+  color: #fff;
+  min-width: 35%;
+  width: 100%;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  height: 4rem;
+  width: 4rem;
+  outline: 0;
+  overflow: hidden;
+}
+
+.skills_card::before {
+  /* content: "CSS"; */
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills_card::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  height: 200%;
+  width: 200%;
+  box-sizing: border-box;
   background: linear-gradient(
       225.3deg,
       rgba(199, 243, 108, 0.06) 5.55%,
       rgba(16, 16, 16, 0.06) 90.64%
     ),
     #101010;
-
-  min-width: 35%;
-  width: 100%;
-  border: 0;
+  border-radius: 40%;
 }
-
-.skills_card + .skills_card {
-  margin-left: 1rem;
+.skills_card:hover:after {
+  animation: spin 2s linear;
+}
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(360deg);
+  }
 }
