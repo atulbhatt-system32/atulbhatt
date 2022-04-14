@@ -4,13 +4,12 @@
   display: flex;
   width: 10%;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .line {
-  height: 300px;
-  border: 1px solid var(--primary-color);
+  height: 480px;
+  border: 0.8px solid var(--text);
   background-color: antiquewhite;
   animation-name: scale-up-center;
   animation-duration: 0.5s;

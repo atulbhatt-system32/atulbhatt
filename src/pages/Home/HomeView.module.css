@@ -1,0 +1,153 @@
+.homeview_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  color: var(--text);
+}
+
+.intro_section {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutme_section {
+  display: flex;
+}
+.intro_section_title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 2rem;
+  width: 50%;
+}
+
+.my_name {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.whoami_detailed {
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 2rem 0;
+  line-height: 1.5rem;
+}
+.professional_role {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social_cta_row {
+  display: flex;
+}
+
+.social_cta_row div + div {
+  margin-left: 1rem;
+}
+
+.cta_button_row button {
+  font-weight: 100;
+}
+
+.cta_button_row button + button {
+  margin-left: 1rem;
+}
+
+.skills_section,
+.projects_section {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #0b0b0b;
+  padding: 4rem 4rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+.projects_section {
+  background: var(--background);
+}
+.skills_section_title,
+.projects_section_title {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.skills_section_subtitle,
+.projects_section_subtitle {
+  font-weight: 200;
+  margin: 1.5rem 0;
+}
+.children_wrapper {
+  padding: 1.5rem;
+  color: #fff;
+}
+.projectcard_title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}
+
+.projectcard_body {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.projects_card_row,
+.skills_card_row {
+  display: flex;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+}
+
+.skills_card_row {
+  margin: 5rem 0;
+
+  overflow-x: auto;
+}
+
+.projects_card_row div ~ div {
+  margin-left: 1rem;
+}
+
+.projectcard_body {
+  margin: 0;
+}
+
+.skills_card_row::-webkit-scrollbar,
+.projects_card_row::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+.skills_card_row::-webkit-scrollbar-track,
+.projects_card_row::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.skills_card_row::-webkit-scrollbar-thumb,
+.projects_card_row::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  outline: 1px solid var(--accent);
+}
+
+.skills_card_row::-webkit-scrollbar,
+.projects_card_row::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+  min-width: 300px;
+  min-height: 20vh;
+  margin: 15px;
+
+  font-size: 5em;
+  text-align: center;
+  line-height: 300px;
+  background-color: #fff9ef;
+  border-radius: 7px;
+}
